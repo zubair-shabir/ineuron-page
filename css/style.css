@@ -233,10 +233,15 @@ transform: scale(1.1);
 }
 .mentors-card{
     margin: 0 30px;
+    
 }
 .mentors-card img{
     /* width: 150px!important; */
-    border-radius: 100px;
+    border-radius: 300px;
+    
+    /* border: 1px solid #683e9f; */
+    -webkit-filter: drop-shadow(5px 5px 5px #7163a9);
+  filter: drop-shadow(5px 5px 5px #7163a9);
 }
 
 .mentors-card h5{
@@ -379,6 +384,7 @@ padding: 20px 0;
     text-align: center;
     cursor: pointer;
     
+    
 }
 .products-card img{
    
@@ -454,8 +460,13 @@ padding: 20px 0;
     width: 70%;
     margin: 20px 20px;
     box-shadow: 1px 1px 10px #808080;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
+    
+    border-top: 3px solid #7163a9;
+    border-bottom: 3px solid #7163a9;
+    /* border-radius: 10px; */
+    /* margin: 0 30px; */
 }
 .fame-card .fame-img{
     width: 100px!important;
