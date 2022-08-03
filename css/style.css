@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'sans-serif';
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #EDEEF3;
+    color: #7163a9;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.logo{
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    
+}
+
+nav .logo-icon{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.logo-text{
+    position: relative;
+    padding: 0 20px;
+    font-size: 18px;
+    border-left: 2px solid #808080;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.logo-text span{
+    vertical-align: super;
+}
+
+.logo-text:hover > .list-categories{
+    max-height: inherit;
+    opacity: 1;
+    width: 300px;
+  }
+
+
+.list-categories{
+    position: absolute;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+    max-height: 0px;
+    background:#EDEEF3;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 300ms ease;
+    width: 0px;
+  }
+
+  .list-categories li{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+
+  }
+
+  .list-categories li:hover{
+    color: #fff;
+    background: #7163a9;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+
+
+.nav-list,.nav-list ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-list ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.nav-btn{
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 1px solid #7163a9;
+    background: #7163a9;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+
+/* hero Section */
+
+.hero-section{
+    background: url('../images/hero-hackathon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    background-blend-mode: overlay;
+    color: #fff;
+    padding-top: 175px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 50%;
+    height: 500px;
+    margin-left: 50px;
+    gap: 10px;
+}
+
+.hero-text h3{
+    background: #7163a966;
+    font-size: 30px;
+    font-weight: 500;
+    width: fit-content;
+}
+.hero-text h2{
+    background: #7163a966;
+    font-size: 50px;
+    font-weight: 800;
+    width: fit-content;
+   
+}
+.hero-text h5{
+    
+    background: #7163a966;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+.hero-btn{
+    width: 220px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1px solid #7163a9;
+    background: #EDEEF3;
+    color: #7163a9;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+.hero-btn:hover{
+background: #7163a9;
+color: #EDEEF3;
+
+
+transform: scale(1.1);
+
+}
+
+.hero-btn:active{
+
+
+
+    transform: scale(0.9);
+
+    }
+
+
+
+
+/* search Section */
+
+.search-section{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #EDEEF3;
+}
+.search-section h2{
+    font-size: 30px;
+    color: #7163a9;
+}
+.search-course{
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 1px solid #7163a9;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    cursor: help;
+}
+.search-course::placeholder{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+
+/* mentors Section */
+.mentor-section{
+    /* background: #EDEEF3; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 30px;
+}
+
+.mentor-section h2{
+    color: #7163a9;
+    font-size: 30px;
+}
+.mentors-card{
+    margin: 0 30px;
+}
+.mentors-card img{
+    /* width: 150px!important; */
+    border-radius: 100px;
+}
+
+.mentors-card h5{
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #7163a9;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+    padding: 10px!important;
+    color: #fff;
+    font-size: 20px;
+    background: #7163a9;
+}
+
+
+.owl-carousel .owl-nav button.owl-prev:active,
+.owl-carousel .owl-nav button.owl-next:active,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover{
+    transition: 0.5s;
+    background: #683e9f;
+}
+.owl-dots{
+    display: none;
+}
+
+/* Upcoming Courses */
+.upcoming-courses{
+    /* height: 700px; */
+    background: #EDEEF3;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+.upcoming-courses h2{
+    font-size: 35px;
+    color: #7163a9;
+    padding-top: 50px;
+}
+.courses-title{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.courses-title .course-title:first-child{
+    background-color: #683e9f;
+    color: #fff;
+}
+.courses-title .course-title{
+    padding: 10px 20px;
+    border: 1px solid #7163a9;
+    color: #7163a9;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 60px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.courses-title .course-title:hover{
+ background: #7163a9;
+ color: #EDEEF3;   
+}
+
+.course-card{
+    margin: 10px 20px;
+    text-align: left;
+    border: 1px solid #683e9f;
+    padding: 20px;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 2px 2px 5px 0px #683e9f;
+    transition: 0.3s;
+    
+}
+.course-card:hover{
+    transform: scale(1.1);
+}
+.course-card .course-name{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #683e9f;
+}
+.course-card .course-instructor{
+    font-size: 14px;
+    font-weight: 500;
+}
+.course-card .price-block{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.price-block .course-price{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price-block .course-status{
+    border: 1px solid #1ee24f;
+    color: #1ee24f;
+    font-size: 14px;
+    padding: 2px 5px;
+}
+
+.upcoming-courses .owl-stage-outer{
+padding: 20px 0;
+}
+
+
+/* Our Products */
+.products{
+    /* height: 600px; */
+    padding: 50px;
+    
+}
+.products h2{
+    font-size: 35px;
+    color: #683e9f;
+    text-align: center;
+}
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+
+.products-card{
+
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.products-card img{
+   
+    width: 200px;
+}
+.products-card h4{
+   text-align: center;
+   margin: 20px 0;
+}
+.products-card p{
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hackthon section */
+.hackthon-partner{
+    /* height: 400px; */
+    text-align: center;
+    padding: 40px 30px;
+    background: #EDEEF3;
+}
+.hackthon-partner h2{
+    font-size: 35px;
+    color: #683e9f;
+    margin-bottom: 50px;
+}
+.companies-list{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.hackthon-partner  .more-text{
+    margin: 30px 0;
+    font-weight: 800;
+    color: #808080;
+    font-size: 20px;
+}
+
+
+/* hall-of-fame */
+.hall-of-fame{
+    padding: 30px 0px;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.hall-of-fame h2{
+    font-size: 35px;
+    text-align: center;
+    color: #683e9f;
+}
+.fame-card{
+    background: #EDEEF3;
+    width: 70%;
+    margin: 20px 20px;
+    box-shadow: 1px 1px 10px #808080;
+    padding: 20px;
+    border-radius: 15px;
+}
+.fame-card .fame-img{
+    width: 100px!important;
+    border-radius: 100px;
+    margin: 10px auto;
+}
+
+.fame-card h5{
+    font-size: 20px;
+    margin: 10px 0;
+    color: #4a4a4a;
+}
+
+.fame-card .fame-designation{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.fame-card .fame-description{
+    font-size: 14px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fame-card .social-icon{
+    width: 20px!important;
+    margin: 10px auto;
+}
+
+
+.hall-of-fame .owl-carousel.owl-drag .owl-item{
+    width: 300px!important;
+}
+
+
+
+/* Footer */
+
+.footer{
+    background: #7163a9;
+    height: 400px;
+    padding: 30px;
+    padding-top: 80px;
+}
+
+.footer-details{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    
+}
+
+
+.footer-details > div{
+    padding: 20px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-radius: 10px;
+    margin: 0 30px;
+}
+
+.footer-loction{
+    
+}
+.footer-social-icons img{
+    width: 60px;
+}
+
+
+
+.footer-social-icons  .social-icons{
+    display: flex;
+
+    /* border-top: 2px solid #EDEEF3; */
+    padding-top: 10px;
+}
+
+.footer-social-icons  .social-icons img:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.footer-logo{
+    width: 150px!important;
+    /* border-bottom: 2px solid #EDEEF3; */
+    padding-bottom: 10px;
+    margin: 0 25%;
+}
+
+.footer-loction .location{
+    display: flex;
+    margin: 30px 0;
+    gap: 10px;
+    color: #EDEEF3;
+}
+.footer-loction .location img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.footer-loction .mail{
+    display: flex;
+    margin: 30px 0;
+    gap: 10px;
+    color: #EDEEF3;
+}
+.footer-loction .mail a{
+    text-decoration: none;
+    color: #EDEEF3;
+    font-weight: 600;
+}
+
+.footer-company,.footer-products{
+    text-align: center ;
+}
+.footer-company h2, .footer-products h2{
+  color: #FCFBFD;
+  border-bottom: 1px dashed #683e9f;
+  padding-bottom: 20px;
+   
+    
+}
+.footer-company ul li, .footer-products ul li{
+    list-style: none;
+    padding: 6px 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-products ul li{
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+
+
+.location-text{
+    /* width: 40%; */
+}
+
+
+
+
+
+
