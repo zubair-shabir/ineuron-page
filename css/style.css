@@ -92,7 +92,12 @@ cursor: pointer;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 
+}
+
+.nav-list ul li:hover{
+    transform: rotate(-7deg);
 }
 .nav-btn{
     border-radius: 15px;
@@ -359,7 +364,7 @@ animation: none;
     border: 1px solid #683e9f;
     padding: 20px;
     border-radius: 10px;
-    height: 250px;
+    height: 260px;
     box-shadow: 2px 2px 5px 0px #683e9f;
     transition: 0.3s;
     
@@ -709,6 +714,7 @@ padding: 20px 0;
     font-size: 18px;
     color: #fff;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .footer-products ul li{
@@ -717,10 +723,10 @@ padding: 20px 0;
 }
 
 
-
-.location-text{
-    /* width: 40%; */
+.footer-company ul li:hover, .footer-products ul li:hover{
+    transform: scale(1.1);
 }
+
 
 
 
